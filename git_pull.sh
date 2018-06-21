@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git config --global credential.helper store
+#git config --global credential.helper store
 for element in `ls $1`
 do
 	if [ -d $element ]
@@ -11,4 +11,4 @@ do
 		cd ..
 	fi
 done
-git config --system --unset credential.helper
+#git config --system --unset credential.helper
